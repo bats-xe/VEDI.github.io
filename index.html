@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Camión de Bomberos - Introducción</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles1.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <div class="animated-logo">V.E.D.I</div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Menú</a>
+            <a href="historia.html">Historia</a>
+            <a href="robot.html">Robot</a>
+        </div>
+    </nav>
+    
+<!-- Portada con video introductorio -->
+<header class="hero-section" id="intro">
+    <video autoplay muted loop class="hero-video">
+        <source src="./videos/VEDI intro.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+    <div class="hero-text">
+        <h1>VEHÍCULO EXTINTOR DE INCENDIOS</h1>
+        <p>Innovación en Rescate y medio ambiente</p>
+    </div>
+</header>
+
+<section id="section-vedi">
+    <div class="vedi-container">
+        <h2 class="vedi-title">¿QUÉ ES V.E.D.I?</h2>
+        <p class="vedi-description">
+            VEDI es un vehículo autónomo y no tripulado diseñado con el propósito de detectar y extinguir incendios en lugares de difícil acceso o de alto riesgo, tales como incendios forestales o en situaciones de rescate de personas. Este proyecto tiene como objetivo principal ofrecer una solución automática y eficaz para situaciones de emergencia, sin necesidad de intervención humana directa. El prototipo está basado en una plataforma Arduino, y aunque es de menor escala y simplificado, demuestra el potencial de la tecnología en este tipo de aplicaciones.
+        </p>
+    </div>
+</section>
+    <!-- Sección de información con carrusel -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <!-- Elementos del carrusel -->
+            <div class="carousel-content">
+                <!-- Sección 1 -->
+                <div class="slide">
+                    <div class="text-content">
+                        <h2>Componentes</h2>
+                        <p>Aqui encontraras informacion sobre los componentes utilizados en V.E.D.I</p>
+                        <a href="robot.html#components-section" class="read-more">Leer más</a>
+                        <span class="info-icon">ℹ️</span>
+                    </div>
+                    <div class="image-content">
+                        <img src="./img/Imagen de WhatsApp 2024-11-02 a las 18.00.59_2f087d15.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <!-- Sección 2 -->
+                <div class="slide">
+                    <div class="text-content">
+                        <h2>¿Como surguio?</h2>
+                        <p>Aqui encontraras informacion de como surguio V.E.D.I</p>
+                        <a href="historia.html#como-surgio" class="read-more">Leer más</a>
+                        <span class="info-icon">ℹ️</span>
+                    </div>
+                    <div class="image-content">
+                        <img src="./img/Surguimiento.jpeg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <!-- Sección 3 -->
+                <div class="slide">
+                    <div class="text-content">
+                        <h2>Funcion y Objetivos</h2>
+                        <p>Aqui encontraras la Funcion y Objetivos que tiene V.E.D.I</p>
+                        <a href="robot.html#how-it-works" class="read-more">Leer más</a>
+                        <span class="info-icon">ℹ️</span>
+                    </div>
+                    <div class="image-content">
+                        <img src="./img/prototipo.jpeg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+            </div>
+            <!-- Flechas de navegación -->
+            <div class="carousel-nav">
+                <span class="carousel-arrow left-arrow">&#10094;</span>
+                <span class="carousel-arrow right-arrow">&#10095;</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/javascript.js"></script> 
+
+<!-- Sección de cuadrados interactivos -->
+<section class="info-cards">
+    <div class="card">
+        <img src="./img/bosqueFuego.jpg" alt="Imagen 1">
+        <div class="card-overlay">
+            <h3>Incendio Forestal en Progreso</h3>
+            <p>¿Cómo podría ayudar V.E.D.I.?
+                V.E.D.I. podría utilizar sensores de temperatura y gas para detectar el fuego de manera temprana y activar su sistema de extinción de incendios en áreas específicas. En un incendio de esta magnitud, podría actuar en zonas críticas mientras llega la ayuda humana, reduciendo la propagación de las llamas. Además, V.E.D.I. podría recopilar y transmitir datos en tiempo real sobre el comportamiento del incendio, la temperatura y los niveles de humo, ayudando a los bomberos a coordinarse de manera segura y efectiva.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./img/AutoFuego.webp" alt="Imagen 2">
+        <div class="card-overlay">
+            <h3>Vehículo en Llamas en Vía Pública</h3>
+            <p>En situaciones de emergencia urbana como esta, V.E.D.I. podría ser enviado al lugar antes que los bomberos para controlar el fuego y reducir el riesgo de explosión. Su sistema de extinción controlado a distancia permitiría apagar las llamas de manera precisa, minimizando el peligro para las personas cercanas. Además, su movilidad controlada o autónoma le permitiría acercarse al vehículo en llamas sin comprometer la seguridad de los rescatistas.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./img/EdificioFuego.jpeg" alt="Imagen 3">
+        <div class="card-overlay">
+            <h3>Incendio en un edificio de gran altura </h3>
+            <p>Cómo V.E.D.I. podría ayudar:
+                V.E.D.I., equipado con sensores de temperatura y gas, podría acercarse de manera segura a las áreas afectadas del edificio para detectar puntos calientes y la propagación de humo. Con su sistema de rociado de agua o espuma, V.E.D.I. podría atacar el fuego en niveles bajos o en las inmediaciones, lo que ayudaría a reducir el riesgo para los bomberos y proporcionar soporte hasta que lleguen equipos especializados. Además, podría enviar datos en tiempo real sobre el calor y las condiciones del humo para informar a los equipos de rescate y ayudar a planificar el ataque al fuego.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./img/RefineriaFuego.jpeg" alt="Imagen 4">
+        <div class="card-overlay">
+            <h3>Incendio en una refinería industrial</h3>
+            <p>En un incendio en una planta de refinería, donde los riesgos por sustancias inflamables son altos, V.E.D.I. podría acercarse de manera remota y segura para rociar agua o espuma en los puntos críticos. Su capacidad para recopilar datos de temperatura y gases ayudaría a monitorear la situación y alertar sobre posibles explosiones o propagación del fuego. Además, V.E.D.I. podría operar en áreas de difícil acceso y proveer información en tiempo real a los equipos de emergencia para que actúen con mayor precisión y seguridad.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>V.E.D.I.</h3>
+            <p>VEHICULO EXTINTOR DE INCENDIOS</p>
+        </div>
+    </div> <br>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Proyecto Camión de Bomberos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

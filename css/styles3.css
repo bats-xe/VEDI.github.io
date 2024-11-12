@@ -1,0 +1,93 @@
+#como-surgio {
+    background-color: #f4f4f4; /* Fondo gris claro para resaltar la sección */
+    padding: 40px 0; /* Espaciado en la parte superior e inferior */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+#como-surgio .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px; /* Máximo ancho de la sección */
+}
+
+#como-surgio h2 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    color: #6a1b9a; /* Violeta oscuro para el título */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Fuente simple y moderna */
+}
+
+#como-surgio p {
+    font-size: 1.2rem; /* Tamaño de texto legible */
+    color: #333; /* Color oscuro para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para facilitar la lectura */
+    margin-bottom: 20px;
+    text-align: justify; /* Justifica el texto para una mejor presentación */
+}
+
+@media (max-width: 768px) {
+    #como-surgio h2 {
+        font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    #como-surgio p {
+        font-size: 1rem; /* Ajusta el tamaño del texto en dispositivos móviles */
+    }
+}
+
+/* Estilo de la sección de la línea del tiempo */
+#timeline {
+    text-align: center;
+    padding: 50px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border-top: 2px solid #B39DDB; /* Línea violeta */
+    margin-top: 20px;
+}
+
+.timeline-point {
+    position: relative;
+    padding: 10px;
+    background-color: #B39DDB;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.timeline-point:hover {
+    background-color: #9575CD; /* Color más oscuro al pasar el mouse */
+}
+
+/* Popups de información */
+.info-popup {
+    display: none; /* Oculto por defecto */
+    background-color: #1F1B24; /* Fondo oscuro */
+    color: #E0E0E0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.info-popup img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #B39DDB;
+    font-size: 1.2em;
+    cursor: pointer;
+    float: right;
+}

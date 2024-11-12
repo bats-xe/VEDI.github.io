@@ -1,0 +1,157 @@
+/* Estilos generales para la sección de los componentes */
+#components-section {
+    width: 100%;
+    background-color: #121212;
+}
+
+/* Estilos para las filas de componentes */
+.component-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Efecto de aparición al hacer scroll */
+.component-row.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para la imagen */
+.component-image {
+    flex: 1;
+    height: 100vh; /* Asegura que la imagen ocupe toda la altura de la ventana */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9); /* Oscurece un poco para contraste */
+}
+
+/* Estilos para la información */
+.component-info {
+    flex: 1;
+    padding: 40px;
+    background-color: #1F1B24; /* Gris oscuro */
+    color: #E0E0E0; /* Gris claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.component-info h3 {
+    font-size: 28px;
+    color: #B39DDB; /* Violeta suave */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.component-info p {
+    font-size: 18px;
+    color: #BDBDBD; /* Gris claro */
+    line-height: 1.6;
+}
+
+/* Alternar disposición de la imagen y el texto */
+.component-row.reverse {
+    flex-direction: row-reverse !important; /* Fuerza el estilo de reversión */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .component-row {
+        flex-direction: column;
+    }
+    .component-row.reverse {
+        flex-direction: column; /* Asegura que en pantallas pequeñas se mantenga vertical */
+    }
+}
+
+/* Estilo para la sección "Cómo Funciona" */
+#how-it-works {
+    padding: 50px 20px;
+    background-color: #121212;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    font-size: 2.5rem;
+    color: #B39DDB; /* Violeta suave */
+    margin-bottom: 20px;
+}
+
+.how-it-works-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.how-it-works-info {
+    flex: 1 1 45%;
+    background-color: #1F1B24;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.how-it-works-info h3 {
+    font-size: 1.8rem;
+    color: #B39DDB;
+    margin-bottom: 10px;
+}
+
+.how-it-works-info p {
+    font-size: 1rem;
+    color: #BDBDBD;
+    line-height: 1.6;
+}
+
+/* Estilo para la sección "Objetivos" */
+#objectives {
+    padding: 50px 20px;
+    background-color: #121212;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+#objectives h2 {
+    font-size: 2.5rem;
+    color: #B39DDB;
+    margin-bottom: 20px;
+}
+
+.objectives-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.objective {
+    flex: 1 1 45%;
+    background-color: #1F1B24;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.objective h3 {
+    font-size: 1.8rem;
+    color: #B39DDB;
+    margin-bottom: 15px;
+}
+
+.objective ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.objective ul li {
+    font-size: 1rem;
+    color: #BDBDBD;
+    line-height: 1.6;
+}

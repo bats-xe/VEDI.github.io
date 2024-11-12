@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #E0E0E0; /* Texto principal en gris claro */
+    background-color: #121212; /* Fondo principal en negro */
+}
+
+h1, h2 {
+    color: #B39DDB; /* Violeta suave para encabezados */
+}
+
+/* Menú de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #4A148C; /* Violeta oscuro */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.animated-logo {
+    color: #D1C4E9; /* Violeta claro */
+    font: italic 900 2em 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: filter 0.3s;
+    white-space: nowrap;
+    line-height: 1;
+    display: inline-block;
+    transform: scale(0.7);
+    transform-origin: left;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links a {
+    color: #BDBDBD; /* Gris claro para enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    color: #7C4DFF; /* Violeta brillante en hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #1F1B24; /* Gris oscuro para el footer */
+    color: #D1C4E9; /* Violeta claro */
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #3E3A45;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #B39DDB; /* Violeta suave */
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #BDBDBD; /* Gris claro */
+}

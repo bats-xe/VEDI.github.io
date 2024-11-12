@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Camión de Bomberos - Introducción</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles3.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <div class="animated-logo">V.E.D.I</div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Menú</a>
+            <a href="historia.html">Historia</a>
+            <a href="robot.html">Robot</a>
+        </div>
+    </nav>
+
+    <section id="como-surgio">
+        <div class="container">
+            <h2>¿Cómo surgió V.E.D.I?</h2>
+            <p>V.E.D.I. (Vehículo Extintor de Incendios) es el resultado de un proyecto escolar que surgió de la necesidad de crear una solución innovadora y funcional en el ámbito de la robótica aplicada a la seguridad. La idea nació como parte de un desafío en el que se buscaba desarrollar un robot que pudiera simular tareas de rescate y extinción de incendios, utilizando la tecnología de Arduino.</p>
+    
+            <p>Desde el comienzo, el objetivo fue combinar creatividad, ingeniería y programación para diseñar un camión de bomberos automatizado que pudiera realizar tareas de extinción de incendios de manera efectiva. Con la ayuda de herramientas como sensores, motores y programación en Arduino, V.E.D.I. fue tomando forma hasta convertirse en una representación real de cómo la tecnología puede ayudar en situaciones de emergencia.</p>
+    
+            <p>El proyecto se desarrolló bajo la premisa de aprender y aplicar conocimientos en robótica, programación y sistemas de control, buscando siempre mejorar la eficacia del robot a medida que avanzaban las pruebas y experimentaciones. Hoy en día, V.E.D.I. no solo es un proyecto escolar, sino también un símbolo de cómo la innovación tecnológica puede tener un impacto positivo en la sociedad.</p>
+        </div>
+    </section>
+    
+
+    <section id="timeline">
+        <h2>Historia</h2>
+        <div class="timeline-container">
+            <!-- Puntos de la línea del tiempo -->
+            <div class="timeline-point" data-info="info1">JUNIO</div>
+            <div class="timeline-point" data-info="info2">JULIO</div>
+            <div class="timeline-point" data-info="info3">AGOSTO</div>
+            <div class="timeline-point" data-info="info4">SEPTIEMBRE</div>
+        </div>
+        <!-- Contenedores de información oculta para cada punto -->
+        <div class="info-popup" id="info1">
+            <h2>JUNIO</h2>
+            <h3>Sincronización de sensores</h3>
+            <p>El dia martes 4/06 se realizo la primer prueba de la sincronización de ambos sensores (flama y gas) para lograr la activación del servomotor y el monitoreo de datos.</p>
+            <p>En esta imagen observamos la conexión entre ambos sensores y el servo hacia la arduino.</p>
+            <br>
+            <img src="./img/FebreroSensores.jpg" alt="">
+            <h3>Impresion 3D</h3>
+            <p>El día lunes 06/05 procedimos a modelar el ejemplo que obtuvimos en 3D; Las ruedas del prototipo deseado, buscando un diseño simple pero eficaz, que nos diera resistencia y sean factibles a la hora de la prueba los diferentes terrenos.
+                Después de la calibración con el modelo PIRAMIDAL y un llavero de ejemplo pudimos obtener una buena terminación tanto térmica como lineal de la impresión, 
+                Aparte hemos probado diferentes filamentos, tamaños, y diseños.
+                Nuestro grupo manejó el diseño para el curso, administrando diferentes modelos tanto de ruedas como partes necesarias para la competencia.        
+                Usamos la aplicación de diseño e impresión CREALITY PRINT, con la máquina shenzen un modelo de impresión parecido a la Ender 3.                
+            </p>
+            <img src="./img/Impresion3D.jpg" alt="">
+            <button class="close-btn">×</button>
+        </div>
+
+        <div class="info-popup" id="info2">
+            <h2>JULIO</h2>
+            <h3>Simulacion de prototipo</h3>
+            <p>Se intentó simular el comportamiento y mecanismo de la bomba de agua (ya que aún no se consiguieron estos elementos) con un Fan cooler de pc, dado a que este solo funciona mediante 12v y con elementos extras a los que tenemos no pudo avanzar en el plano físico del hardware por lo que decidió intentar el la pagina de TINKERCARD donde utilice:
+                <li>ARDUINO UNO</li>
+                <li>SERVO MOTOR</li>
+                <li>SENSOR DE TEMPERATURA</li>
+                <li>MOTOR DE CORRIENTE CONTINUA 5V</li>
+                <li>TRANSISTOR</li>
+                <li>RESISTENCIA</li>
+                <li>PROTOBOARD</li>
+                Se Realizo la conexión correcta de cada objeto para controlar el feedback de ellos mediante las acciones de cada uno dado así poder simular el accionar del prototipo  cuando se presente temperaturas altas (fuego) y así poder apagarlo, una vez logre la conexión correcta de los mismos entre a programar el código de prueba con conocimientos previos y ayuda de diversos videos con la corrección de ia para evitar errores y anotarlos, a continuación presento el código usado e imagenes del mismo sin olvidar que el la carpeta de PRUEBAS se encuentra el video del funcionamiento.                
+            </p>
+            <img src="./img/SimulacionPrototipo.jpg" alt="">
+            <h3>Soldadura</h3>
+            <p>
+                Aca nos dedicadamos a estudiar la conexión y empezar a soldar cada componente necesario para el funcionamiento del prototipo,  estudiando las conexiones pudimos resolver la falta de pines de 5v mediante conexiones en serie de algunos componentes pero antes teníamos que soldarlos, a la hora de querer empezar a soldar los sensores de flama en serie para alimentarlos a todos de una sola forma , nos encontramos con que nos era imposible que el estaño se quedará sujetado en la entrada del sensor por lo que después de intentos con diferentes soldadores y diferentes estaños tomamos la decisión de comprar flux o pasta para soldar, al otro dia fuimos a realizar la compra de la misma y empezamos a probar soldaduras externas al ver que si funcionaba empezamos a realizar la conexión, esta fue un éxito.
+            </p>
+            <img src="./img/SoldaduraSensor.jpg" alt="">
+            <button class="close-btn">×</button>
+        </div>
+        <div class="info-popup" id="info3">
+            <h2>AGOSTO</h2>
+            <h3>Motorreductores</h3>
+            <p>empezamos a resolver algunas cuestiones con los motorreductores(ya que nos llegaron los motores de 5v), pero no contabamos con sus cajas reductoras, buscando entre materiales y reciclados pudimos encontrar 2 de estos modelos amarillos pero a uno le faltaban engranajes, asi que teniamos 2 opciones imprimirlos o buscar en las cajas viejas, fuimos pruimero por imprimirlos pero no conseguimos un archivo exacto para el tamaño correcto de reducir y antes de ponernos a diseñar decidimos buscar en la caja de cosas viejas, donde por suerte si encontramos engranajes que dieron justo con la circunferencia necesaria para dar las vueltas y disminuir la velocidad del motor, asi que nos pusimos a armarlos y dejarlos para su uso.
+            </p>
+            <img src="./img/Motorreductores.jpg" alt="">
+            <h3>Bomba de agua</h3>
+            <p>Con la bomba de agua no tuvimos tantos problemas, en primer lugar decidimos adaptarles unos cables para poder facilitar la conexión a la arduino (o cualquier componente eléctrico), después iniciamos la prueba de la misma con una manguera de nebulización  y efectivamente se comprobó que andara.</p>
+            <p>Ahora nos quedaba conectar el modulo relay a la bomba a la arduino y a las baterías para que esta funcionase de la forma correcta , cuando quisimos conectar la batería de 9v no encendia , pensamos que al ser mucha tensión esta no iba a prender asi que cambiamos la bateria a 3 pilas de ()  asi dando menos tensión a la bomba y que esta encienda de igual manera, dsp mediante software le indicamos al modulo relay que encendía para que la bomba quede en funcionamiento 3s este resultó con éxito
+            </p>
+            <img src="./img/Bombacodigoagua.jpg" alt="">
+            <button class="close-btn">×</button>
+        </div>
+        <div class="info-popup" id="info4">
+            <h2>SEPTIEMBRE</h2>
+            <h3>Funcionamiento de Sistemas</h3>
+            <p>Después de que la conexión relay-bomba fuera exitosa decidimos incorporar el funcionamiento del sistema antiincendios así que nos encargamos de la electrónica y las conexiones de este, teniendo la experiencia de Talamo pudimos hacer una conexión efectiva de los componentes sin que estos se comportan de manera extraña, la lógica que necesitábamos era que al detectar fuego los sensores mandan una señal a la arduino la arduino  espere 3s par mandarle la señal de encendido al relay y este prenda la bomba durante 3s.
+                Despues del exito con la bomba de agua decidimos  realizar la conexión con los sensores, donde usamos el relay en el pin 12, y los sensores en el 4, 5 y 6;
+                un problema que se nos presentó fue la sensibilidad de los sensores esto nos retrasó unos minutos ya que buscamos una equivalencia entre ellos, después de hacer eso segui con el código de prueba el cual debía detectar fuego esperar 3 segundos y encender la bomba 3 segundos
+            </p>
+            <img src="./img/FuncionamientoSistemas.jpg" alt="">
+            <h3>Radio control</h3>
+            <p>
+                Necesitábamos una solución rápida por lo cual Lautaro encontró el juguete a  radio control viejo que tenia pero estaba roto tanto el auto como el control, entonces desarmamos las piezas del juguete y lo juntamos con la parte de atrás de otro, se soldó un capacitor que no estaba y tmb conectamos una extensión para poder hacer andar el mismo, después en el tema del control del radio necesitábamos soldar la antena pero no teníamos una, buscamos una radio vieja y tuvimos que adaptar el agarre del mismo dsp arreglamos la carcasa y limpiamos un poco la placa, pegamos estas partes debajo de la base del prototipo y arreglamos la carcasa del control dando efectivo el funcionamiento de este, en la carpeta de campo se encuentran videos demostrando su funcionamiento, detectando y extinguiendo el fuego.
+                Ahora tenemos que hacer funcionar la lectora de SIM así poder realizar la llamada cuando se detecte fuego o detecte gas, tenemos que soldar los pines a la placa del lector así mismo su antena y dsp regular la frecuencia a 3v para evitar una sobrecarga en el, mientras tanto solo tenemos el funcionamiento principal del prototipo si llegamos con el tiempo quizás diseñemos una carcasa, en la carpeta de recursos estan los videos demostrando el funcionamiento del mismo.
+            </p>
+            <img src="./img/Radiocontrol.jpg" alt="">
+            <button class="close-btn">×</button>
+        </div>
+    </section>
+
+    <script src="./js/javascript3.js"></script> 
+
+<!-- Footer Mejorado -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>V.E.D.I.</h3>
+            <p>VEHICULO EXTINTOR DE INCENDIOS</p>
+        </div>
+    </div> <br>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Proyecto Camión de Bomberos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Camión de Bomberos - Introducción</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles2.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <div class="animated-logo">V.E.D.I</div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Menú</a>
+            <a href="historia.html">Historia</a>
+            <a href="robot.html">Robot</a>
+        </div>
+    </nav>
+
+    <section id="how-it-works">
+        <h2>¿Cómo Funciona?</h2>
+        <div class="how-it-works-content">
+            <div class="how-it-works-info">
+                <h3>Detección de Incendios y Activación del Sistema</h3>
+                <p>
+                    El sistema está diseñado para detectar incendios de manera autónoma mediante sensores de flama. Cuando los sensores de flama detectan la presencia de fuego, envían una señal al microcontrolador Arduino. Este sistema procesa la información y, como medida de seguridad, espera 3 segundos para confirmar que el fuego sigue presente y no es una falsa alarma.
+                </p>
+                <p>
+                    Si la señal de fuego persiste después de este breve retraso, Arduino envía una señal al módulo relay, el cual activa la bomba de agua durante 3 segundos, proporcionando la acción necesaria para extinguir el fuego de manera inmediata.
+                </p>
+            </div>
+            <div class="how-it-works-info">
+                <h3>Detección de Gases Tóxicos</h3>
+                <p>
+                    Además de la detección de fuego, el sistema está equipado con un sensor de gas MQ2, que tiene la capacidad de detectar gases peligrosos en el ambiente, como el monóxido de carbono y otros gases tóxicos. Si se detecta una concentración peligrosa de gas, el sensor activa un LED de alerta para informar a los usuarios de la presencia de una situación de riesgo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="objectives">
+        <h2>Objetivos</h2>
+        <div class="objectives-content">
+            <div class="objective">
+                <h3>Objetivo General</h3>
+                <p>
+                    Desarrollar un vehículo autónomo capaz de detectar incendios en lugares de difícil acceso y activarse automáticamente para extinguir las llamas de manera efectiva.
+                </p>
+            </div>
+            <div class="objective">
+                <h3>Objetivos Específicos</h3>
+                <ul>
+                    <li>Integrar sensores de flama y gas para detectar fuego y gases tóxicos de forma precisa.</li>
+                    <li>Desarrollar un sistema de control mediante Arduino para activar la bomba de agua al detectar fuego, optimizando la respuesta del sistema.</li>
+                    <li>Implementar un sistema de alerta para notificar al usuario mediante SMS o llamada, en caso de que se detecten incendios o gases peligrosos.</li>
+                    <li>Realizar pruebas exhaustivas en diferentes escenarios, asegurando que el sistema funcione correctamente en condiciones reales y de emergencia.</li>
+                    <li>Fomentar la colaboración y el trabajo en equipo durante todas las etapas del desarrollo, para garantizar la calidad y efectividad del prototipo final.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="components-section">
+        <!-- Componente 1 (Imagen izquierda, Info derecha) -->
+        <div class="component-row">
+            <div class="component-image" style="background-image: url('./img/Arduinouno.jpg');"></div>
+            <div class="component-info">
+                <h3>Arduino Uno</h3>
+                <p>Es el cerebro del prototipo. Esta placa microcontroladora
+                    gestiona los datos de los sensores y controla el encendido del sistema de
+                    extinción (bomba de agua). Se utiliza debido a su accesibilidad y flexibilidad
+                    en proyectos de electrónica</p>
+            </div>
+        </div>
+    
+        <!-- Componente 2 (Imagen derecha, Info izquierda) -->
+        <div class="component-row reverse">
+            <div class="component-info">
+                <h3>Sensores de flama</h3>
+                <p>Son los encargados de detectar la
+                    presencia de fuego. Funcionan emitiendo radiación infrarroja que las llamas
+                    generan. Cuando cualquiera de estos sensores detecta fuego, envía una
+                    señal a la placa Arduino para activar el sistema de extinción.
+                    </p>
+            </div>
+            <div class="component-image" style="background-image: url('./img/SensorFlama.png');"></div>
+        </div>
+    
+        <!-- Componente 3 (Imagen izquierda, Info derecha) -->
+        <div class="component-row">
+            <div class="component-image" style="background-image: url('./img/SensorMQ2.jpg');"></div>
+            <div class="component-info">
+                <h3>Sensor MQ2</h3>
+                <p> Este sensor detecta gases peligrosos como
+                    monóxido de carbono, metano, etanol y humo. Cuando se detecta un gas
+                    tóxico, el sensor activa un LED que alerta sobre la presencia de gases
+                    peligrosos. Este sensor agrega una capa extra de seguridad al sistema.
+                    </p>
+            </div>
+        </div>
+    
+        <!-- Componente 4 (Imagen derecha, Info izquierda) -->
+        <div class="component-row reverse">
+            <div class="component-info">
+                <h3>Bomba de agua</h3>
+                <p>La bomba se activa mediante un módulo relay
+                    cuando se detecta fuego. Está diseñada para rociar agua en el área afectada
+                    durante 3 segundos, tras lo cual se apaga automáticamente. Esta función
+                    permite la extinción rápida del fuego.
+                    </p>
+            </div>
+            <div class="component-image" style="background-image: url('./img/Bomba\ de\ agua.jpg');"></div>
+        </div>
+    
+        <!-- Componente 5 (Imagen izquierda, Info derecha) -->
+        <div class="component-row">
+            <div class="component-image" style="background-image: url('./img/Modulo\ relay.webp');"></div>
+            <div class="component-info">
+                <h3>Modulo reley</h3>
+                <p> Controla el flujo de corriente hacia la bomba de agua.
+                    Recibe la señal de Arduino y se activa 3 segundos después de que se detecta
+                    fuego, permitiendo que la bomba se encienda durante 3 segundos para
+                    apagar las llamas.</p>
+            </div>
+        </div>
+    
+        <!-- Componente 6 (Imagen derecha, Info izquierda) -->
+        <div class="component-row reverse">
+            <div class="component-info">
+                <h3>Servomotor</h3>
+                <p>Utilizado para realizar movimientos mecánicos en el prototipo,
+                    como la dirección del chorro de agua o ajustes en la estructura. El servomotor
+                    proporciona la capacidad de realizar movimientos específicos y controlados
+                    dentro del sistema de extinción.
+                    </p>
+            </div>
+            <div class="component-image" style="background-image: url('./img/Servomotor.jpg');"></div>
+        </div>
+    </section>    
+    
+    <script src="./js/javascript2.js"></script> 
+
+<!-- Footer Mejorado -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>V.E.D.I.</h3>
+            <p>VEHICULO EXTINTOR DE INCENDIOS</p>
+        </div>
+    </div> <br>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Proyecto Camión de Bomberos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
